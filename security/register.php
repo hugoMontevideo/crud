@@ -95,12 +95,15 @@ $error=false;
                         ), 
                         'true' // rappel : le dernier argument permet d'obtenir lastId
                     );
+        if( $resultat ) $success= '<div class="alert alert-success w-50 mx-auto mt-5">Votre inscription a été réalisée avec succès.</div>';   
     }
 }// fin !empty($_POST)
 ?>
 
 <!-- affiche l'erreur si l'email est déjà utilisé -->
-<?=  $unique_email ?? ""; ?>
+<?= $unique_email ?? ""; ?>
+<?= $success ?? '' ?>
+
 
 <form class="mt-5 w-75 mx-auto" method="post" enctype="multipart/form-data">
     <div class="mb-3">

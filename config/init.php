@@ -1,7 +1,6 @@
 <?php
 //  fichier de config de l'app
-
-session_start();
+if( session_status() !== PHP_SESSION_ACTIVE ) session_start();
 
 const CONFIG=[
     'db'=>[
@@ -20,4 +19,6 @@ const CONFIG=[
 ];
 
 const BASE_PATH='/PHP/php_cours/clone_crud/';
+
+
 
