@@ -1,12 +1,16 @@
 <?php
 require_once 'Db.php';
 
-function debug($data)
+/*
+ * valider mot de passe
+ * @param string $mdp
+ */
+function isValidMDP($mdp)
 {
-    echo '<pre>';
-    print_r($data);
-    echo '</pre>';
+  return preg_match('/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{6,20}$/', $mdp)  ;
 }
+
+
 
 function execute(string $requete, array $data=[],$lastId=null)
 {
@@ -68,4 +72,29 @@ function password_strength_check($password, $min_len = 6, $max_len = 15, $req_di
     } else {
         return FALSE;
     }
+
+    
+    /**
+     * generer un joli affichage debug
+     * @param array $maVar à debuger avec var_dump
+     * @return void
+     */
+    function debugV_Dump($var):void
+    {
+        echo '<pre>';
+        var_dump($var);
+        echo '</pre>';   
+    } 
+
+    /**
+     * generer un joli affichage debug
+     * @param array $maVar à debuger avec print_r
+     * @return void
+     */
+    function debug($var):void
+    {
+        echo '<pre>';
+        print_r($var);
+        echo '</pre>';   
+    } 
 }

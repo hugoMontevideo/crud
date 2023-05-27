@@ -14,10 +14,10 @@ const CONFIG=[
     ],
     'app'=>[
         'name'=>'CRUD',
-        'projecturl'=>'http://localhost/PHP/03-crud'
+        'projecturl'=>'http://localhost/PHP/php_cours/clone_crud'
     ]
 
 ];
 
-const BASE_PATH='/PHP/03-crud/';
+const BASE_PATH='/PHP/php_cours/clone_crud/';
 
