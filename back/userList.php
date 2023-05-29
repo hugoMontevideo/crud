@@ -27,7 +27,7 @@ if (isset($_GET['i'])){
                         ':id'=>$_GET['i']
                     ));
             header('location:userList.php');
-            exit;
+            exit();
 
         }
     }
@@ -37,7 +37,7 @@ if (isset($_GET['i'])){
         execute("DELETE FROM user WHERE id=:id", 
                 array( ':id' => $_GET['i'] ));
         header('location:userList.php');
-        exit;
+        exit();
     }
 
 }

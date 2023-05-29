@@ -18,7 +18,7 @@ const CONFIG=[
 
 ];
 
-const BASE_PATH='/PHP/php_cours/clone_crud/';
+const BASE_PATH='/PHP/php_cours/clone_crud';
 
 
 

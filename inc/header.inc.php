@@ -32,12 +32,12 @@
                     <a class="nav-link" href="#">Pricing</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="<?= BASE_PATH.'/exo/index.php'; ?>">Exercices</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">ADMIN</a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="<?=  BASE_PATH.'back/userList.php'; ?>">Gestion utilisateur</a>
+                        <a class="dropdown-item" href="<?= BASE_PATH.'/back/userList.php'; ?>">Gestion utilisateur</a>
                         <a class="dropdown-item" href="#">Another action</a>
                         <a class="dropdown-item" href="#">Something else here</a>
                         <div class="dropdown-divider"></div>
@@ -45,8 +45,8 @@
                     </div>
                 </li>
             </ul>
-            <a href="<?=  BASE_PATH.'security/login.php'; ?>" class="btn btn-primary">Connexion</a>
-            <a href="<?=  BASE_PATH.'security/register.php'; ?>" class="btn btn-success">Inscription</a>
+            <a href="<?=  BASE_PATH.'/security/login.php'; ?>" class="btn btn-primary">Connexion</a>
+            <a href="<?=  BASE_PATH.'/security/register.php'; ?>" class="btn btn-success">Inscription</a>
         </div>
     </div>
 </nav>
